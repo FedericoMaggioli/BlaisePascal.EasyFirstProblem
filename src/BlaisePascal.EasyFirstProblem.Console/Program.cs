@@ -4,18 +4,22 @@
     {
         Console.WriteLine("Insert client name.");
 
+        //create a variable to store the client name
         string clientName = Console.ReadLine();
 
-        Console.WriteLine("Are you a student? yes/no.");
+        Console.WriteLine("Are you a student? Yes/No.");
 
+        //create a variable to store the answer
         string isClientAStudent = Console.ReadLine();
 
-        if (isClientAStudent != "yes" && isClientAStudent != "no")
+        //vauting the answer to check if it is valid
+        if (isClientAStudent != "Yes" && isClientAStudent != "No")
         {
-            Console.WriteLine("Invalid answer. Please enter 'yes' or 'no'.");
+            Console.WriteLine("Invalid answer. Please enter 'Yes' or 'No'.");
             return;
         }
 
+        //create a variable for the type of delivery and validate it
         Console.WriteLine("Insert the delivery type: delivery/retire.");
 
         string deliveryType = Console.ReadLine();
@@ -28,6 +32,7 @@
 
         Console.WriteLine("Insert the number of bought books.");
 
+        //int.pars used to convert the string input to an integer
         int booksNumber = int.Parse(Console.ReadLine());
 
         Console.WriteLine("Insert the cost for single book.");
